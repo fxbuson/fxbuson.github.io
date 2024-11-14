@@ -1,6 +1,7 @@
 html *
 {
   font-family: "Roboto", sans-serif !important;
+  color: ghostwhite;
 }
 
 nav
@@ -28,7 +29,6 @@ nav li {
 nav li a
 {
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -42,4 +42,5 @@ nav li a:hover
 body
 {
   margin: 100px;
+  background-color: #222;
 }
