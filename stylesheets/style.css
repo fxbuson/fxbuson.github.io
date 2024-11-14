@@ -10,7 +10,9 @@ nav
   position:fixed;
   left: 0%;
   top: 0%;
-  height: 50px;
+  margin: 0;
+  padding: 0;
+  height:50px;
   width: 100%;
   background-color: #333;
 }
@@ -21,10 +23,12 @@ nav ul
   margin: 0;
   padding: 0;
   overflow: hidden;
+  height: 100%;
 }
 
 nav li {
   float: left;
+  height: 100%;
 }
 
 nav li a
@@ -33,6 +37,7 @@ nav li a
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  height: 100%;
 }
 
 nav li a:hover
@@ -91,5 +96,5 @@ h2
 
 .icon
 {
-  height: 20px;
+  height: 100%;
 }
