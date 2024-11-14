@@ -55,7 +55,6 @@ body
 
 h2
 {
-  margin-top:40px;
   margin-bottom: 3px;
 }
 
@@ -67,4 +66,25 @@ h2
   margin:.3em;
   padding: .8em;
   
+}
+
+.uni-column:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bi-column
+{
+  float:left;
+  width:50%;
+}
+
+.panel
+{
+  width:90%;
+  border-radius:5%;
+  background-color: #333;
+  padding: 1% 3%;
 }
