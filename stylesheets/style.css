@@ -56,3 +56,10 @@ h2
 {
   margin-bottom: 3px;
 }
+
+.button
+{
+  display: block;
+  border-radius: 5px;
+  background-color: #090;
+}
