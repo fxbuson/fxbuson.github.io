@@ -60,7 +60,10 @@ h2
 
 .button
 {
-  border-radius: 5px;
+  display:inline-block;
+  border-radius: .5em;
   background-color: #070;
-  padding:10px;
+  margin:.3em;
+  padding: .8em;
+  
 }
