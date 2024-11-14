@@ -51,3 +51,8 @@ body
   width: 100%;
   background-color: ghostwhite;
 }
+
+h2
+{
+  margin-bottom: 3px;
+}
