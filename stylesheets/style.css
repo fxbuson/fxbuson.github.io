@@ -60,6 +60,7 @@ body
 
 h2
 {
+  display:inline;
   margin-bottom: 3px;
 }
 
@@ -102,5 +103,11 @@ h2
 .section-icon
 {
   height: 40pt;
-  padding-right: 10pt;
+  padding-right:10pt;
+  margin:10pt;
+}
+
+.icon-title
+{
+  display:flex;
 }
