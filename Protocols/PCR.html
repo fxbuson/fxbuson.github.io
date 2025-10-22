@@ -8,6 +8,45 @@ title: Felipe's Protocols
 <h1>PCR (Polymerase Chain Reaction)</h1>
 <h2>Rationale</h2>
 <p>
-    PCR is a method used to amplify specific sections of a DNA sequence. It uses a heat-resistant DNA polymerase,
-    a pair of DNA oligonucleotides to define the amplicon and prime the reaction, and dNTPs as substrates for the amplicon elongation.
+    PCR is a method used to amplify specific sections of a DNA sequence.
+    It uses a heat-resistant DNA polymerase (DNAP), a pair of DNA oligonucleotides (primers) to define the amplicon and prime the reaction,
+    and dNTPs (deoxyribonucleoside triphosphates: A, T, C, G) as substrates for the amplicon elongation.
 </p>
+<p>
+    The reaction needs to cycle through three steps to copy a single DNA strand once:
+    <ol>
+        <li>Denaturation: heat to 95~98°C to de-hybridize the template DNA strand</li>
+        <li>Annealing: cool down to the primers' melting temperature (Tm) to bind them to the template</li>
+        <li>Elongation: heat to 72°C to allow elongation by the DNAP</li>
+    </ol>
+    The quick changes in temperature are made inside a thermocycler,
+    and this normally is done 25~30 times with an initial longer denaturing step and a final longer elongation step.
+    The products of a cycle serve as template for the next, ensuring geometric growth of the number of template DNA copies until dNTPs are depleted.
+</p>
+
+<h2>Q5 Polymerase protocol</h2>
+
+<p>Q5 is a proprietary (NEB) high-fidelity DNAP used mostly for molecular cloning purposes.</p>
+<p>Check the Tm for annealing regions on Q5 reactions in <a href="https://tmcalculator.neb.com/#!/main">their website</a>.</p>
+
+<h2>Primer Design</h2>
+
+<p>
+    There are some general best-practices when designing primers for PCR:
+    <ul>
+        <li>Avoid primer dimers and secondary structure. Use Thermo's <a href="https://www.thermofisher.com/uk/en/home/brands/thermo-scientific/molecular-biology/molecular-biology-learning-center/molecular-biology-resource-library/thermo-scientific-web-tools/multiple-primer-analyzer.html">Mutiple Primer Analyzer</a> for that.</li>
+        <li>Aim for annealing regions around 20bp, with Tm around 60°C.</li>
+        <li>Try to have the 3'-end of primers with a C or G.</li>
+    </ul>
+</p>
+
+<h2>Tips</h2>
+<ul>
+    <li>
+        When using quick denaturing and annealing steps (~15s) it's useful to pay attention to the ramping times in your thermocycler.
+        If it considers temperature ramping into the cycle time, you might not stay at the desired temperature for long enough.
+    </li>
+    <li>
+        Template complexity matters a lot for appropriate PCR efficiency. Genomic templates might require extra time in all steps.
+    </li>
+</ul>
