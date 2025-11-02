@@ -28,15 +28,55 @@ title: Felipe's Protocols
 
 <p>Q5 is a proprietary (NEB) high-fidelity DNAP used mostly for molecular cloning purposes.</p>
 <p>Check the Tm for annealing regions on Q5 reactions in <a href="https://tmcalculator.neb.com/#!/main">their website</a>.</p>
+<p>Adapted from <a href="https://www.neb.com/en/protocols/2013/12/13/pcr-using-q5-high-fidelity-dna-polymerase-m0491">NEB's protocol</a>, assemble the following reaction:</p>
+<table>
+    <tr>
+        <th>Component</th>
+        <th>10uL reaction</th>
+        <th>25uL reaction</th>
+        <th>Final conc.</th>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>10 mM dNTPs</td>
+        <td>1 uL</td>
+        <td>2.5 uL</td>
+        <td>100 uM</td>
+    </tr>
+    <tr>
+        <td>10 uM primers </td>
+        <td>0.5 uL (each)</td>
+        <td>1.25 uL (each)</td>
+        <td>0.5 uM</td>
+    </tr>
+    <tr>
+        <td>5X Q5 buffer</td>
+        <td>2 uL</td>
+        <td>5 uL</td>
+        <td>1X</td>
+    </tr>
+    <tr>
+        <td>Q5 polymerase</td>
+        <td>0.1 uL</td>
+        <td>0.25 uL</td>
+        <td>0.02 U/uL</td>
+    </tr>
+</table>
 
 <h2>Primer Design</h2>
 
 <p>
     There are some general best-practices when designing primers for PCR:
     <ul>
-        <li>Avoid primer dimers and secondary structure. Use Thermo's <a href="https://www.thermofisher.com/uk/en/home/brands/thermo-scientific/molecular-biology/molecular-biology-learning-center/molecular-biology-resource-library/thermo-scientific-web-tools/multiple-primer-analyzer.html">Mutiple Primer Analyzer</a> for that.</li>
+        <li>Avoid primer dimers and secondary structure. Use Thermo's <a href="https://www.thermofisher.com/uk/en/home/brands/thermo-scientific/molecular-biology/molecular-biology-learning-center/molecular-biology-resource-library/thermo-scientific-web-tools/multiple-primer-analyzer.html">Multiple Primer Analyzer</a> for that.</li>
         <li>Aim for annealing regions around 20bp, with Tm around 60°C.</li>
         <li>Try to have the 3'-end of primers with a C or G.</li>
+        <li>If using Benchling, you can click the proposed Tm it gives you at the bottom and change parameters like concentrations of primers, dNTPs and Mg.</li>
     </ul>
 </p>
 
@@ -48,5 +88,8 @@ title: Felipe's Protocols
     </li>
     <li>
         Template complexity matters a lot for appropriate PCR efficiency. Genomic templates might require extra time in all steps.
+    </li>
+    <li>
+        You can often run the reaction with half the amount of polymerase as recommended.
     </li>
 </ul>
