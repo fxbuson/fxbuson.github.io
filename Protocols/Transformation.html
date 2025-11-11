@@ -1,0 +1,62 @@
+---
+layout: standard
+title: Transformation
+---
+
+{% include protocols_header.html %}
+
+<h1> Bacterial Transformation </h1>
+
+<h2>Rationale</h2>
+<p>
+    Transformation stands for the insertion of a plasmid molecule in a bacterial cell, usually by means of a temperature or electrical shock.
+    The shock is supposed to destabilize the membrane of the bacteria, allowing an influx of the negatively charged DNA molecules.
+</p>
+<p>
+    After the shock there is a recovery step where we place the bacteria in non-selective media for it to produce some antibiotic resistance protein before going in selective media.
+    If we placed it in selective media right away, some antibiotics would stop growth even if the cells have our desired DNA.
+</p>
+<p>
+    To execute this protocol you first need competent cells: a preparation that makes the cells prone to receive DNA.
+    Some bacterial species present natural transformation, where they don't need this extra preparation.
+</p>
+
+<h2> Heat-shock method</h2>
+
+
+<p>
+    Before starting this protocol, it's useful to set up either a bucket of ice and a heat-block at 42°C, or a thermocycler with the appropriate program.
+    Pre-preparing LB-Agar plates with antibiotics is also good although this can be done in the recovery step.
+</p>
+<ul>
+    <li>Take an aliquot of competent cells from a -80°C freezer and thaw on ice (~10 min).</li>
+    <li>Separate your competent cells in aliquots of the desired volume (often 50 uL)</li>
+    <li>Add DNA (variable volume) and incubate in ice for 20 min</li>
+    <li>Quickly move to 42°C for 45s. Timing is important, so try not to deviate from this.</li>
+    <li>Move back to ice while you prepare the next step</li>
+    <li>Recovery: Place cells in 1mL of LB or SOB at 37°C for 1h (can be reduced to up to 20 min)</li>
+    <li>Centrifuge the cells (E.coli: ~10K G for 5min) and discard ~900uL of media, then ressuspend</li>
+    <li>Plate cells in selective-media plates and leave at 37°C for 12-16h</li>
+</ul>
+<p>
+    Alternatively, the ice incubation and heat-shock can be done in a thermocycler with PCR tubes instead of manually
+    (that's especially relevant for big rounds of 20+ transformations).
+    Pay attention to the ramp speed of your thermocycler to determine the timings, but overall follow the following program:
+</p>
+<ul>
+    <li>22 min: 4°C</li>
+    <li>45 s: 42°C</li>
+    <li>- : 4°C</li>
+</ul>
+<p>
+    The two extra incubation minutes are to allow for you to start the program without the samples, then transfer them into the machine once it's at 4°C.
+</p>
+
+<h2>Electroporation method</h2>
+
+<h2>Plating methods</h2>
+
+<p>
+    Plating cells is normally done with L-spreaders or glass beads to move the cell-containing liquid around the plate,
+    but it can also be done by just dropping a larger amount of liquid and swirling the plate to spread it, then allowing some time with the plate open for it to dry.
+</p>

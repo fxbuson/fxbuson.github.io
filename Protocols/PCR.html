@@ -1,6 +1,6 @@
 ---
 layout: standard
-title: Felipe's Protocols
+title: PCR
 ---
 
 {% include protocols_header.html %}
@@ -66,6 +66,59 @@ title: Felipe's Protocols
         <td>0.25 uL</td>
         <td>0.02 U/uL</td>
     </tr>
+    <tr>
+        <td>Water</td>
+        <td>6 uL</td>
+        <td>15 uL</td>
+        <td>-</td>
+    </tr>
+</table>
+
+<p>
+    Also adapting NEB's protocol: set up a thermocycler with the following program:
+</p>
+
+<table>
+    <tr>
+        <th>Step</th>
+        <th>Instruction</th>
+        <th>Time</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>98°C</td>
+        <td>5 min</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>98°C</td>
+        <td>30 s</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>anneal temp.</td>
+        <td>30 s</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>72°C</td>
+        <td>30 s /amplicon kb</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Back to step 2</td>
+        <td>25~30 times</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>72°C</td>
+        <td>5 min</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>4°C</td>
+        <td>-</td>
+    </tr>
 </table>
 
 <h2>Primer Design</h2>
@@ -91,5 +144,9 @@ title: Felipe's Protocols
     </li>
     <li>
         You can often run the reaction with half the amount of polymerase as recommended.
+    </li>
+    <li>
+        Assembling the reaction is normally done at room temperature. To minimize primer dimer formation, some protocols recommend assembling the reaction at 4°C
+        then transferring the tubes to a pre-heated thermocycler at 98°C. This attempts to stop the enzymes from extending the dimers before the first denaturation.
     </li>
 </ul>
